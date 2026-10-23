@@ -5,7 +5,8 @@
  */
 #pragma once
 #include "keyboard/keyboard.h"
-#include "cap_lora868/cap_lora868.h"
+#include "cap_cc1101/cap_cc1101.h"
+#include "cap_nfc/cap_nfc.h"
 #include "utils/settings/settings.h"
 #include <M5Unified.hpp>
 #include <M5GFX.h>
@@ -132,7 +133,8 @@ public:
     SdCardProbeResult_t sdCardProbe();
 
     /* ----------------------------------- Cap ---------------------------------- */
-    CapLoRa868 capLora868;
+    CapCC1101 capCC1101;
+    CapNFC capNFC;
 
 private:
     Settings* _settings             = nullptr;
@@ -145,7 +147,6 @@ private:
     bool _is_sd_card_mounted        = false;
     int _ble_keyboard_event_slot_id = -1;
     int _usb_keyboard_event_slot_id = -1;
-    std::unique_ptr<CapLoRa868> _cap_lora868;
 
     void display_init();
     void i2c_scan();

@@ -7,11 +7,15 @@ file(GLOB_RECURSE MY_SRCS
     "./apps/*.cpp"
 )
 
-set(MY_INCLUDE_DIRS 
+set(MY_INCLUDE_DIRS
     "."
     "./assets"
     "./hal"
     "./apps"
+    "./hal/cap_nfc"
+    "./hal/cap_nfc/rfal002/include"
+    "./hal/cap_nfc/rfal002/source"
+    "./hal/cap_nfc/rfal002/source/st25r3916"
 )
 
 set(PIKA_PYTHON_INCS

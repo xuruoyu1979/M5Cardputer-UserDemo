@@ -18,5 +18,5 @@
 #include "app_keyboard/app_keyboard.h"
 #include "app_imu/app_imu.h"
 #include "app_sdcard/app_sdcard.h"
-#include "app_lora_chat/app_lora_chat.h"
-#include "app_gps/app_gps.h"
+#include "app_cc1101_chat/app_cc1101_chat.h"
+#include "app_nfc_reader/app_nfc_reader.h"

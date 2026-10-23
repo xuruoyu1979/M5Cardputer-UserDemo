@@ -42,7 +42,7 @@ void Hal::update()
 {
     M5.update();
     keyboard.update();
-    capLora868.update();
+    capCC1101.update();
 }
 
 void Hal::feedTheDog()
